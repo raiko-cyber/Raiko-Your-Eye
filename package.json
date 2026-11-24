@@ -1,0 +1,13 @@
+{
+  "name": "raiko-your-eye",
+  "version": "0.1.0",
+  "description": "Raiko-Your Eye: ИИ-помощник для слепых и слабовидящих",
+  "private": true,
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

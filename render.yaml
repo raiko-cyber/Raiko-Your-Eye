@@ -1,0 +1,16 @@
+# Хостинг на Render (render.com): приложение получает адрес https://..., и камера,
+# микрофон и геолокация начинают работать на телефоне.
+# Ключ GEMINI_API_KEY вписывается в панели Render (Environment), а не сюда.
+services:
+  - type: web
+    name: raiko-your-eye
+    runtime: node
+    plan: free
+    buildCommand: "echo no build"
+    startCommand: node server.js
+    healthCheckPath: /api/health
+    envVars:
+      - key: GEMINI_API_KEY
+        sync: false
+      - key: RATE_LIMIT_PER_MIN
+        value: "20"

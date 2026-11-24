@@ -1,0 +1,5 @@
+.env
+node_modules/
+# Piper и казахский голос (130 МБ) — скачиваются отдельно, в GitHub не кладём
+piper/
+test-kk.wav
